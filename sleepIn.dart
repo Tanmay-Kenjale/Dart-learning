@@ -20,7 +20,3 @@ bool sleepIn(String weekday, bool vacation) {
     }
   }
 }
-
-void main() {
-  print(sleepIn("Saturday", false));
-}
