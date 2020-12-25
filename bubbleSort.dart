@@ -1,6 +1,12 @@
-import "sortedTest.dart";
+import 'sortedTest.dart';
 
 List swap(dynamic list) {
+  for (dynamic i in list) {
+    if (i is int) {
+    } else {
+      print("The lists should only consist of digits");
+    }
+  }
   int lastNumber = 0;
   for (dynamic i = 0; i < list.length;) {
     if (i < lastNumber) {
@@ -21,7 +27,7 @@ List swap(dynamic list) {
 }
 
 void main() {
-  List<dynamic> subjectList = [1.54, 4.56, 3.54, 9.21, 7.68];
+  List<dynamic> subjectList = [1, 3, 2, 5, 4, 6];
   while (true) {
     subjectList = swap(subjectList);
     bool decBreak = sorted(subjectList);
