@@ -9,6 +9,21 @@ List removeDuplicates(List<dynamic> list) {
   return result_list;
 }
 
-void main() {
-  print(removeDuplicates([1, 1, 1, 3, 3, 5]));
+bool checkForDuplicates(List list) {
+  List utilList = [];
+  bool utilBool = false;
+  for (dynamic i in list) {
+    for (dynamic char in utilList) {
+      if (char == i) {
+        return true;
+      } else {
+        utilBool = true;
+      }
+      if (utilBool == true) {
+        return false;
+      }
+    }
+    utilList.add(i);
+  }
 }
+

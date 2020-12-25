@@ -27,7 +27,7 @@ List swap(dynamic list) {
 }
 
 void main() {
-  List<dynamic> subjectList = [1, 3, 2, 5, 4, 6];
+  List<dynamic> subjectList = [1, 3, 2, 5, 4, 6, 9, 7, 8, 10, 12, 11, 14, 13, 16, 15];
   while (true) {
     subjectList = swap(subjectList);
     bool decBreak = sorted(subjectList);

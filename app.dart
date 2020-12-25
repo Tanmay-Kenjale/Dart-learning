@@ -21,6 +21,7 @@ class student {
     this.div = div;
     this.rollNo = rollNo;
   }
+
   int returnM1() {
     return this.m1;
   }
@@ -44,4 +45,81 @@ class student {
   }
 }
 
-class Mamma
+class mammal {
+  void walk() {
+    print("Walk-Walk-Walk");
+  }
+
+  void run() {
+    print("Run-Run-Run");
+  }
+
+  void angry() {
+    print("😠️👿️");
+  }
+}
+
+// inheritance
+class dog extends mammal {
+  /// we wont write anything over here///
+}
+
+class methods {
+  void closed() {
+    print("Closed");
+  }
+
+  void open() {
+    print("Open");
+  }
+
+  void pending() {
+    print("Pending");
+  }
+
+  void approved() {
+    print("Approved");
+  }
+
+  void denied() {
+    print("Denied");
+  }
+
+  void unknown() {
+    print("Unknown");
+  }
+}
+
+class weighingMachine {
+  void throwSomeError() {
+    throw FormatException("Kutra aahes tu");
+  }
+}
+
+class tooMuchWeightException implements Exception {
+  String message;
+  tooMuchWeightException(message) {
+    this.message = message;
+  }
+  String assignErrorMessage() {
+    return message;
+  }
+}
+
+class errorAndException {
+  void raiseError() {
+    throw FormatException("Gonecase");
+  }
+
+  void acceptError() {
+    try {
+      raiseError();
+    } on FormatException {
+      print("Nooooooob!");
+    } finally {
+      print("Exception handled!");
+    }
+  }
+}
+
+
