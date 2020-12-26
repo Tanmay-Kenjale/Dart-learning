@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 String stringTimes(String body, int n) {
   if (n < 0) {
     return "Enter a prositive integer 'n'";
