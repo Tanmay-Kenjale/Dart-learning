@@ -1,4 +1,5 @@
 {
     "powermode.enabled": true,
+    "powermode.presets": "flames",
     "editor.fontSize": 11,
 }

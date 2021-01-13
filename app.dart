@@ -1,125 +1,134 @@
 import 'dart:io';
 
-class student {
-  int m1;
-  int m2;
-  int std;
-  String div;
-  int rollNo;
-  Student(int m1, int m2, int std, String div, int rollNo) {
-    if (m1 > 100) {
-      print("Maths marks cannot be more than 100");
-      exit(0);
-    }
-    if (m2 > 100) {
-      print("Science marks cannot be more than 100");
-      exit(0);
-    }
-    this.m1 = m1;
-    this.m2 = m2;
-    this.std = std;
-    this.div = div;
-    this.rollNo = rollNo;
+class Rectangle {
+  double _hieght;
+  double _width;
+
+  Rectangle(double hieght, double width) {
+    this._hieght = hieght;
+    this._width = width;
   }
 
-  int returnM1() {
-    return this.m1;
+  double getHieght() {
+    return this._hieght;
   }
 
-  int average() {
-    return (this.m1 + this.m2) ~/ 2;
+  double getWidth() {
+    return this._width;
   }
 
-  String predict() {
-    if (this.average() > 75) {
-      return "good";
-    } else if (this.average() > 85) {
-      return "best";
-    } else if (this.average() < 75) {
-      return "bad";
+  double calcArea() {
+    return this._hieght * this._width;
+  }
+
+  double perimeter() {
+    return 2 * (this._hieght + this._width);
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////
+String replaceOne(String str, String subject, String replacer) {
+  Iterable<String> str1 = str.split('');
+  String result = "";
+  for (String i in str1) {
+    if (i == subject) {
+      result = result + replacer;
+    } else {
+      result = result + i;
     }
   }
-
-  String info() {
-    return "Std: ${this.std}\nDiv: ${div}\nRollNo: ${this.rollNo}\nRecent exam performance: ${this.predict()}";
-  }
+  return result;
 }
 
-class mammal {
-  void walk() {
-    print("Walk-Walk-Walk");
-  }
+///////////////////////////////////////////////////////////////////////////////
+void opMissis() {
+  String str = "Mississippi";
+  List list = str.split('');
+  String result = "";
 
-  void run() {
-    print("Run-Run-Run");
-  }
-
-  void angry() {
-    print("😠️👿️");
-  }
-}
-
-// inheritance
-class dog extends mammal {
-  /// we wont write anything over here///
-}
-
-class methods {
-  void closed() {
-    print("Closed");
-  }
-
-  void open() {
-    print("Open");
-  }
-
-  void pending() {
-    print("Pending");
-  }
-
-  void approved() {
-    print("Approved");
-  }
-
-  void denied() {
-    print("Denied");
-  }
-
-  void unknown() {
-    print("Unknown");
-  }
-}
-
-class weighingMachine {
-  void throwSomeError() {
-    throw FormatException("Kutra aahes tu");
-  }
-}
-
-class tooMuchWeightException implements Exception {
-  String message;
-  tooMuchWeightException(message) {
-    this.message = message;
-  }
-  String assignErrorMessage() {
-    return message;
-  }
-}
-
-class errorAndException {
-  void raiseError() {
-    throw FormatException("Gonecase");
-  }
-
-  void acceptError() {
-    try {
-      raiseError();
-    } on FormatException {
-      print("Nooooooob!");
-    } finally {
-      print("Exception handled!");
+  for (int k = 0; k < list.length;) {
+    if (list[k] == "i") {
+      list[k] = "ii";
     }
+    k = k + 1;
+  }
+
+  for (String k in list) {
+    result = result + k;
+  }
+
+  print(result.length);
+
+  for (int k = 0; k < list.length;) {
+    if (list[k] == "s") {
+      if (list[k - 1] == "s") {
+        list[k] = "";
+      }
+    }
+    k = k + 1;
+  }
+
+  list.remove("");
+  result = "";
+
+  for (String k in list) {
+    result = result + k;
+  }
+  print(result.length);
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+class nameDob {
+  String _name;
+  String _dob;
+
+  nameDob(String name, String dob) {
+    this._name = name;
+    this._dob = dob;
+  }
+
+  String getName() {
+    return this._name;
+  }
+
+  String getDob() {
+    return this._dob;
+  }
+
+  String getData() {
+    return "${this._name}: ${this._dob}";
   }
 }
 
+void nameDobUser() {
+  var listNames = [
+    nameDob('Tanmay', '9 august').getData(),
+    nameDob('Aditya', '23 March').getData(),
+    nameDob('Shaunak', '29 March').getData(),
+    nameDob('Kanak', '16 December').getData(),
+    nameDob('Rohan', '18 May').getData(),
+    nameDob('Parth', '13 May').getData()
+  ];
+  for (String i in listNames) {
+    print(i);
+  }
+}
 
+///////////////////////////////////////////////////////////////////////////////
+
+bool funcTester(var func, var resultExpected) {
+  if ((func()) == resultExpected) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+int ret3() {
+  return 3;
+}
+
+void main() {
+  print(funcTester(ret3, 3));
+}
