@@ -19,7 +19,3 @@ bool sorted(dynamic list) {
   }
   return result;
 }
-
-void main() {
-  print(sorted([-1, 1, 2, 3]));
-}

@@ -7,7 +7,3 @@ List reverseList(List<int> list) {
   }
   return result;
 }
-
-void main() {
-  print(reverseList([1, 3, 2, 4, 6, 5, 8, 7, 9, 8, 0, 10, 32, 45, 67, 41, 68, 87, 54])); 
-}
