@@ -1,10 +1,10 @@
 import 'dart:math';
 
 class Rand {
-  var dt = DateTime.now();
+  var _dt = DateTime.now();
 
   int randint(int max) {
-    int result = dt.microsecond;
+    int result = _dt.microsecond;
     if (result > max) {
       bool done = false;
       while (!done) {
@@ -18,7 +18,7 @@ class Rand {
   }
 
   int random() {
-    return dt.microsecond * 2;
+    return _dt.microsecond * 2;
   }
 
   List randRange(int min, int max, int skip) {
@@ -33,7 +33,7 @@ class Rand {
 
   dynamic choice(List list) {
     int lengthList = list.length;
-    int std = dt.microsecond;
+    int std = _dt.microsecond;
     if (list.length < std) {
       while (true) {
         std = std - lengthList;
