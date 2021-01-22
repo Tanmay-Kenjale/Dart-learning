@@ -1,6 +1,7 @@
 import 'dart:io';
 
 void countMen(int maximum) {
+  /* A simple counter */
   for (int count = 0; count < maximum;) {
     print(count);
     stdin.readLineSync();

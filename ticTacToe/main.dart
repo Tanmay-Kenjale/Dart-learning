@@ -10,7 +10,9 @@ void main() {
 
   bool isException = false;
 
+  // A nested loop. 
   while (true) {
+    // If exception is not thier then only change player. 
     if (!isException) {
       if (player == "O") {
         player = "X";
@@ -19,10 +21,13 @@ void main() {
       }
     }
 
+    // Taking the user input. 
     print("Enter numbers only between 1...9");
     stdout.write("$player's turn: ");
     dynamic position = stdin.readLineSync();
     position = int.parse(position);
+
+    // This will avoid RangeErrors
     if (position > 9) {
       isException = true;
       continue;

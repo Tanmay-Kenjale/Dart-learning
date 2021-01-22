@@ -1,4 +1,5 @@
 void moveBug(int initialPos) {
+  
   if (initialPos < 10 && initialPos >= 0) {
     List list = ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"];
     String bug = "🐞";

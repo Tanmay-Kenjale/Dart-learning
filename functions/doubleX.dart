@@ -1,4 +1,5 @@
 bool doubleX(String str) {
+  /* To find whether their is a 'xx' in the given string*/
   List fromStr = str.split('');
   String lastNumber = "";
   bool result = false;

@@ -12,6 +12,7 @@ class Board {
   }
 
   void dispBoard() {
+    /* displays the board in a more adorable form */
     print("");
     print("");
     print(this._board[0] +
@@ -36,7 +37,10 @@ class Board {
     print("");
   }
 
+
   bool changeBoardElement(String playerName, int pos) {
+    /* It will change the element of the board to X or Y; after checking if the 
+    element itself is not one of them.  */
     if (playerName != "X" && playerName != "O") {
       exit(0);
     }
@@ -55,10 +59,12 @@ class Board {
   }
 
   void completeBoardSetup() {
+    /* Will make the board ready for playing the game */
     this._completeBoard();
   }
 
   void checkDash() {
+    /* It will check if the game is a draw */
     if (!(this._board.contains("-"))) {
       print("");
       print("");
@@ -76,6 +82,7 @@ class Board {
 }
 
 List copyList(List originList, List copyTo) {
+  /* To copy a list */
   copyTo.clear();
   for (dynamic i in originList) {
     copyTo += [i];
@@ -85,6 +92,7 @@ List copyList(List originList, List copyTo) {
 }
 
 bool checkAll(List list, dynamic element) {
+  /* To check if the element provided is the only element in the list.  */
   int length = list.length;
   int count = 0;
 
@@ -102,6 +110,7 @@ bool checkAll(List list, dynamic element) {
 }
 
 String checkForWin(Board boardObj, String playerName) {
+  /* Checks if the game is over and declares who wins */
   List column1 = [boardObj._board[0], boardObj._board[3], boardObj._board[6]];
   List column2 = [boardObj._board[1], boardObj._board[4], boardObj._board[7]];
   List column3 = [boardObj._board[2], boardObj._board[5], boardObj._board[8]];

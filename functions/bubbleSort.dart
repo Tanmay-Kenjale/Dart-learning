@@ -1,6 +1,7 @@
 import 'sortedTest.dart';
 
 List swap(dynamic list) {
+  /* Swaps a value if it is smaller than the next one */
   for (dynamic i in list) {
     if (i is int) {
     } else {
@@ -11,6 +12,7 @@ List swap(dynamic list) {
   for (dynamic i = 0; i < list.length;) {
     if (i < lastNumber) {
       if (i == 0) {
+        // Initializing a temporary variable to swap. 
         int tmp = list[i];
         list[i] = list[i + 1];
         list[i + 1] = tmp;
@@ -20,6 +22,7 @@ List swap(dynamic list) {
         list[i - 1] = temp;
       }
     }
+    // To note the last number. 
     lastNumber = list[i];
     i = i + 1;
   }

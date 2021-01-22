@@ -20,6 +20,7 @@ class CashRegister {
 }
 
 void main() {
+  // The CashRegister is the user of the bankAccount class. 
   CashRegister reg = CashRegister();
   for (int i = 0; i < 10;) {
     reg.deposit(1000);
