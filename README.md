@@ -1,6 +1,8 @@
 # Dart-learning
 
-There are a couple of classes in the classes folder. Of them the random class is a usefull one, 
-it has the usefull methods of the random class in python. Other than this class all other ones are 
-solutions to problem statements. Programs like 'bubble sort', 'replaceOne', 'sortedTest', 'reverseList', etc. 
-are usefull for solving big problems. 
+The Random class in the classes folder has some usefull methods of the Random class in python. The ticTacToe game is 
+a command line game; it needs 2 players(X and O) to play. Most of the classes and funcs in the repo are 
+some logical problems like nameDob, hllLightCirc, romanNumbers, carTrain, moveBug, opMissi, etc. 
+The binarySearch program works with lists and nothing else. It finds the lists middle and then parts the list into 2. 
+The sorting program in the functions folder works with lists, it uses bubble sort. The sortedTest program 
+tests whether a list is sorted or not. 
