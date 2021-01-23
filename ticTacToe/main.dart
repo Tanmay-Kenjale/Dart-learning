@@ -3,7 +3,6 @@ import 'dart:io';
 
 void main() {
   Board gameBoard = Board();
-  gameBoard.completeBoardSetup();
   String player = "O";
   int count = 0;
   gameBoard.dispBoard();

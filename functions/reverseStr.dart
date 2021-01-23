@@ -12,5 +12,3 @@ String reverseString(String subj) {
   // The first letter of the subject wont be added in the loop. 
   return result + subj[0];
 }
-
-

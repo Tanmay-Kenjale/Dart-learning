@@ -1,15 +1,7 @@
 import 'dart:io';
 
 class Board {
-  List _row1 = ["-", "-", "-"];
-  List _row2 = ["-", "-", "-"];
-  List _row3 = ["-", "-", "-"];
-
-  List _board = [];
-
-  void _completeBoard() {
-    this._board = this._row1 + this._row2 + this._row3;
-  }
+  List _board = ["-", "-", "-", "-", "-", "-", "-", "-", "-"];
 
   void dispBoard() {
     /* displays the board in a more adorable form */
@@ -58,10 +50,6 @@ class Board {
     }
   }
 
-  void completeBoardSetup() {
-    /* Will make the board ready for playing the game */
-    this._completeBoard();
-  }
 
   void checkDash() {
     /* It will check if the game is a draw */
