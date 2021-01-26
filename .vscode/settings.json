@@ -1,4 +1,11 @@
 {
+    "editor.renderWhitespace": "all",
+    "workbench.colorCustomizations": {
+        "editorWhitespace.foreground": "#FFFFFF00", 
+    }, 
+
+    "powermode.backgroundMode": "mask",
+    "powermode.gifMode": "restart", 
     "powermode.enabled": true,
     "powermode.presets": "particles",
     "editor.fontSize": 11,
