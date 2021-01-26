@@ -11,7 +11,7 @@ void main() {
 
   // A nested loop.
   while (true) {
-    // If exception is not thier then only change player.
+    // If exception is not their then only change player. 
     if (!isException) {
       if (player == "O") {
         player = "X";
