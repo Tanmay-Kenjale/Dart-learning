@@ -8,5 +8,3 @@ void newLine(List l) {
   }
   print("");
 }
-
-

@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'dart:math';
+
 
 void timer(int noOfMinutes) {
   /* Be focused with a pomodoro */
