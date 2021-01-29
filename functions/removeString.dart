@@ -1,7 +1,7 @@
 import 'range.dart';
 
 String removeString(String str, String object) {
-  /* Removes a character of a string from it */
+  /* Removes a character from a string */
 
   String result = "";
 

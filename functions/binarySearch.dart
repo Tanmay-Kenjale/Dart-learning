@@ -58,6 +58,5 @@ void main() {
     l.add(i);
     i = i + 1;
   }
-  l.add(290);
-  binarySearch(l, 290);
+  binarySearch(l, 301);
 }
