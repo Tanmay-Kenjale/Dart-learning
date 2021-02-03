@@ -7,7 +7,7 @@ int linearSearch(List subj, dynamic element) {
 
   if (subj.contains(element)) {
     for (dynamic i in subj) {
-      count = count + 1;
+      count++;
       if (i == element) {
         break;
       }
@@ -16,7 +16,7 @@ int linearSearch(List subj, dynamic element) {
     exit(1);
   }
 
-  return count - 1;
+  return count--;
 }
 
 void main() {
