@@ -12,4 +12,4 @@ void moveBug(int initialPos) {
       print(list);
     }
   }
-}
+} 
