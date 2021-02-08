@@ -4,3 +4,5 @@ The ticTacToe game is a command line game; it needs 2 players(X and O) to play. 
 The binarySearch program works with lists. It finds the lists middle and then parts the list into 2. 
 The sorting program in the functions folder works with lists, it uses bubble sort. The sortedTest program 
 tests whether a list is sorted or not. 
+randomPassGen(from logical programs folder) is a program that will generate a strong and different password for you each time you run it. 
+It contains 16 characters which comprises of 4 lowercase alphabets, 4 uppercase alphabets, 4 integers and 4 symbols. 
