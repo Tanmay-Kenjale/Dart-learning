@@ -1,6 +1,7 @@
 # Dart-learning
 
-The ticTacToe game is a command line game; it needs 2 players(X and O) to play. Most of the classes and funcs in the repo are some logical problems like nameDob, hllLightCirc, romanNumbers, carTrain, moveBug, opMissi, etc. 
+The ticTacToe game is a command line game; it needs 2 players(X and O) to play. The programs in the logical problems folder and in the classes folder are 
+just solutions to some problem statements. 
 The binarySearch program works with lists. It finds the lists middle and then parts the list into 2. 
 The sorting program in the functions folder works with lists, it uses bubble sort. The sortedTest program tests whether a list is sorted or not. 
 randomPassGen(from logicalProblems folder) is a program that will generate a strong and different password for you each time you run it. 
