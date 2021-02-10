@@ -1,4 +1,4 @@
-import '../functions/range.dart';
+import '../math/range.dart';
 
 class BankAccount {
   double _balance = 0;

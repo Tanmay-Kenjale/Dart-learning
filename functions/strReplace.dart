@@ -1,4 +1,4 @@
-import 'range.dart';
+import '../math/range.dart';
 
 String strReplace(String subj, String replaceFrom, String replaceTo) {
   if (subj.contains(replaceFrom)) {

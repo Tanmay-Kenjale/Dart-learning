@@ -1,4 +1,4 @@
-import 'range.dart';
+import '../math/range.dart';
 
 String removeString(String str, String object) {
   /* Removes a character from a string */

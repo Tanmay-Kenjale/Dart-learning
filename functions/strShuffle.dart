@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'range.dart';
+import '../math/range.dart';
 import 'strReplace.dart';
 
 String strShuffle(String str) {

@@ -1,4 +1,4 @@
-import '../functions/range.dart';
+import 'range.dart';
 
 List fibonacci(int listLength) {
   int firstNo = 0;

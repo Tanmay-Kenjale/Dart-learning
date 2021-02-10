@@ -1,5 +1,5 @@
 import 'dart:math';
-import '../functions/range.dart';
+import '../math/range.dart';
 import '../functions/strShuffle.dart';
 
 String randomPassGen() {
