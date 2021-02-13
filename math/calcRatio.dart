@@ -1,6 +1,4 @@
 List calcLB(int diagonal, List<int> ratio) {
-  "diagonal ^ 2 = ratio[0] ^ 2 + ratio[1] ^ 2";
-
   if (!(ratio.length == 2)) {
     print("Ratio should contain only 2 elements");
   }
@@ -15,4 +13,8 @@ List calcLB(int diagonal, List<int> ratio) {
   double resultX1 = diagSq / sumSq;
 
   return [resultX1 * ratio1, resultX1 * ratio2];
+}
+
+void main() {
+  
 }
