@@ -7,7 +7,6 @@ import 'Rupee.dart';
 
 class CashRegister {
   static final Rupee _paiseVal = Rupee(0.01);
-  static final Paise _rupeeVal = Paise(100);
 
   double _purchase;
   double _payment;

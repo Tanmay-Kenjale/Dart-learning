@@ -8,3 +8,5 @@ randomPassGen(from logicalProblems folder) is a program that will generate a str
 It contains 16 characters which comprises of 4 lowercase alphabets, 4 uppercase alphabets, 4 integers and 4 symbols. 
 Math folder contains algorithms such as prime.dart which will tell you if a number is prime or not. 
 The fibonacci series is an algorithm which adds 2 previous numbers and produces a third number; then it will add the second and third to produce the fourth. 
+The practiceProblems folder is same like the logicalProblems folder(It contains unpredictable names). 
+

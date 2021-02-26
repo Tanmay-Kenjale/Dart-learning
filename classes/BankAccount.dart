@@ -76,7 +76,8 @@ class BankAccount {
   String savingsInterest(double interestRate) {
     /* add interest to savings */
     String result = "";
-    if (this._count > 7) {
+    // for quick solution
+    if (this._count >= 0) {
       if (this._balance > 0) {
         double percentOf = (interestRate / 100) * this._balance;
         this._balance = this._balance + percentOf;

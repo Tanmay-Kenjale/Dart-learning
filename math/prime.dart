@@ -1,7 +1,7 @@
 import 'range.dart';
 
 bool prime(int number) {
-  /* returns true of number is 'prime' */
+  /* returns true if number is 'prime' */
   bool result = true; 
 
   for (int i in range(2, number)) {
