@@ -15,7 +15,7 @@ class TaxReturn {
   TaxReturn(double income, int status) {
     /* Constructs a TaxReturn object for a given income 
     and marital status
-     */
+    */
 
     this._income = income;
     this._status = status;
