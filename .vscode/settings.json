@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 13, 
-    "editor.fontWeight": 980, 
+    "editor.fontWeight": "bold", 
     "files.autoSave": "afterDelay", 
     "files.encoding": "utf8", 
     "editor.tabCompletion": "on", 
