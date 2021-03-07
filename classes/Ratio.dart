@@ -1,6 +1,6 @@
 class RatioD {
-  int _a; // the first element of the ratio
-  int _b; // the second element of the ratio
+  int _a = 0; // the first element of the ratio
+  int _b = 0; // the second element of the ratio
 
   RatioD(int firstElement, int secondElement) {
     if (firstElement >= 1 && secondElement >= 1) {

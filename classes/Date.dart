@@ -2,16 +2,16 @@ import 'Day.dart';
 import 'Month.dart';
 
 class Date {
-  Month _month;
-  Day _day;
+  // for 
+  Month _month = Month("");
+  Day _day = Day(0);
 
   Date(Month month, Day day) {
-    this._month = month;
     this._day = day;
+    this._month = month;
   }
 
   String getDate() {
     return "${this._month.getMonth()} ${this._day.getDay()}";
   }
 }
-

@@ -1,5 +1,5 @@
 class Month {
-  String _month = null;
+  String _month = "";
 
   Month(String month) {
     List months = [
@@ -18,6 +18,9 @@ class Month {
     ];
     if (months.contains(month)) {
       this._month = month;
+    } else if (month == "") {
+      // for creating an empty object
+      this._month = "";
     }
   }
 

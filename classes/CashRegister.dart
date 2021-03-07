@@ -1,4 +1,3 @@
-import 'Paise.dart';
 import 'Rupee.dart';
 
 /* 
@@ -8,14 +7,8 @@ import 'Rupee.dart';
 class CashRegister {
   static final Rupee _paiseVal = Rupee(0.01);
 
-  double _purchase;
-  double _payment;
-
-  CashRegister() {
-    /* Constructs a cashRegister class with no money in it.  */
-    _purchase = 0;
-    _payment = 0;
-  }
+  double _purchase = 0;
+  double _payment = 0;
 
   void recordPurchase(double amount) {
     /* Records the purchase price of an item.  */

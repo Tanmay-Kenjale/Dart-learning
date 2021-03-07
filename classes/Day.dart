@@ -1,8 +1,9 @@
 class Day {
-  int _day = null;
+  int _day = 0;
 
   Day(int day) {
-    if (day > 0 && day <= 31) {
+    // for creating an empty object
+    if (day >= 0 && day <= 31) {
       this._day = day;
     }
   }

@@ -6,7 +6,7 @@ import '../functions/removeString.dart';
 
 void main() {
   stdout.write("Enter a number with a comma: ");
-  String str = stdin.readLineSync();
+  dynamic str = stdin.readLineSync();
   str = removeString(str, ",");
   print(str);
 }
